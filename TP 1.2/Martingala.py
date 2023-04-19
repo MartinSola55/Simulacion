@@ -13,9 +13,6 @@ def graficar(valoresCapital,frecRel,capital,t):
     plt.axhline(y=0, color='red')
     plt.show()
 
-
-
-
     etiquetas=[]
     for x in range(1 , t+1):
         etiquetas.append(x)
@@ -104,19 +101,14 @@ def martinGala(tiradas,capital,apuesta, tipoJuego):
                 frecuenciaRelativa.append(tiradaGanadora/i)
             break;
         valoresCapital.append(capital)
-
-
-
-
-    print(frecuenciaRelativa)
-    print(valoresCapital)
+        
     graficar(valoresCapital,frecuenciaRelativa,capitalOriginal,tiradas)
 
 
-t = 100 #Número de tiradas
+t = 150 #Número de tiradas
 capital = 10000
-apuesta = 1000 #Apuesta Mínima
-tipoJuego = "infinito" #finito | infinito
+apuesta = 100 #Apuesta Mínima
+tipoJuego = "finito" #finito | infinito
 global negros
 global rojos
 negros = [2, 4, 6, 8, 10, 11, 13, 15, 17, 20, 22, 24, 26, 28, 29, 31, 33, 35]

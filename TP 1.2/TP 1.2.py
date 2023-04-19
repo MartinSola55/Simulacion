@@ -160,9 +160,7 @@ def estrategiaFibonacci_Tiradas(saldo,cant_tiradas):
     saldo_historial.append(saldo)
     nro_tirada.append(0)                                      
     for i in range(cant_tiradas):      
-        apuesta = fibonacci(enesimo) * apuesta_inicial      # Apuesto 10 unidades al "n" que me trae          
-        if saldo-apuesta < 0:                               # Si saldo menos apuesta es menor que 0, sale 
-            break                                           # sale de la funcion para no agotar completamente el saldo
+        apuesta = fibonacci(enesimo) * apuesta_inicial      # Apuesto 10 unidades al "n" que me trae
         apuesta_historial.append(apuesta)
         tirada = ran.choice(mesa)
         if apuesta==10:
@@ -197,9 +195,7 @@ def estrategiaParoli_Tiradas(saldo,cant_tiradas):
     saldo_historial.append(saldo)
     nro_tirada.append(0)
     apuestas_historial.append(apuesta_inicial)                                      
-    for i in range(cant_tiradas):            
-        if saldo-apuesta < 0:
-            break
+    for i in range(cant_tiradas):
         tirada = ran.choice(mesa)
         apuestas_historial.append(apuesta)
         if apuesta==10:
