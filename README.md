@@ -1,5 +1,5 @@
-# Simulacion 
-Cursado 2023
+# Simulación 
+Cursado 2023 - Grupo 6 - Comisión 404
 
 Integrantes:
 - Fernández Cariaga, Ezequiel
